@@ -2,8 +2,8 @@ import streamlit as st
 import pandas as pd
 import datetime
 import os
-st.text(os.environ.get("R_HOME", "Undefined"))
-os.environ["R_HOME"] = "/usr/local/bin/R"
+# st.text(os.environ.get("R_HOME", "Undefined"))
+# os.environ["R_HOME"] = "/usr/local/bin/R"
 
 import pdftotext
 import rpy2
@@ -13,7 +13,7 @@ from rpy2.robjects.packages import importr
 utils = importr('utils')
 base = importr('base')
 
-utils.install_packages('pdftools')
+# utils.install_packages('pdftools')
 pdftools = importr('pdftools')
 
 
