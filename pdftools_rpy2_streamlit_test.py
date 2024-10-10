@@ -1,4 +1,6 @@
 import streamlit as st
+st.text(os.environ.get("R_HOME", "Undefined"))
+
 import pandas as pd
 import datetime
 import os
