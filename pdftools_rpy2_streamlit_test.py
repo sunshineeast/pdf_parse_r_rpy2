@@ -2,6 +2,8 @@ import streamlit as st
 import pandas as pd
 import datetime
 import os
+os.environ["R_HOME"] = "/usr/local/bin/R"
+
 import pdftotext
 import rpy2
 import rpy2.robjects as robjects
