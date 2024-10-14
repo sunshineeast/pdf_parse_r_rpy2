@@ -7,7 +7,7 @@ import os
 
 import pdftotext
 import rpy2
-import rpy2.robjects as robjects
+# import rpy2.robjects as robjects
 from rpy2.robjects.packages import importr
 
 utils = importr('utils')
